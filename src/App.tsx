@@ -1,12 +1,11 @@
-import { Content, Header } from "./components";
+import { Content, Header, UserBlock } from "./components";
 
-import styles from './app.module.scss';
+import styles from "./app.module.scss";
 
 function App() {
-
   return (
     <>
-      <Header children={'test'} />
+      <Header children={<UserBlock />} />
       <div className={styles.content}>
         <Content />
       </div>

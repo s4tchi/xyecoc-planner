@@ -1,0 +1,28 @@
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  margin: 0;
+  cursor: pointer;
+  transition: 0.1s;
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.user_content {
+  position: fixed;
+  top: 65px;
+  right: -320px;
+  width: 300px;
+  bottom: 15px;
+  transition: 0.3s;
+
+  &_open {
+    right: 15px;
+  }
+}
