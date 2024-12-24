@@ -1,0 +1,9 @@
+.content {
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 70px 20px 20px 20px;
+
+    display: grid;
+    grid-template-columns: 1fr;
+}
