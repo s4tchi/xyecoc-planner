@@ -11,7 +11,7 @@ export function Header({ children }: HeaderProps) {
     <div className={styles.header}>
       <div className={styles.logo_container}>
         <img alt="logo" src={Logo} className={styles.logo} />
-        <p className={styles.title}>Xyecoc.tasks</p>
+        <p className={styles.title}>Xyecoc.Task</p>
       </div>
       {children}
     </div>
