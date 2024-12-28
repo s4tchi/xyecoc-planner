@@ -10,8 +10,11 @@ export function AuthForm() {
         <p className={styles.title}>
           Wellcome to <span className={styles.title_span}>Xyecoc</span>
         </p>
-
-        <img alt="google" src={Google} className={styles.google} />
+        <div className={styles.auth_vars}>
+          <a href={import.meta.env.VITE_GOOGLE_AUTH_URL}>
+            <img alt="google" src={Google} className={styles.google} />
+          </a>
+        </div>
       </Content>
     </div>
   );

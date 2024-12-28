@@ -10,6 +10,15 @@
   z-index: 1;
   backdrop-filter: blur(2px);
 
+  .auth_vars {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 10px;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+  }
   .auth_content {
     width: 100%;
     max-width: 400px;
