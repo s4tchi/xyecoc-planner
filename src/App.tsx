@@ -1,20 +1,22 @@
-import { AuthForm, Content, Header, UserBlock } from "./components";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DefaultPage from "./pages/default-page";
+import TokenPage from "./pages/token-page/inde";
 
-import styles from "./app.module.scss";
-import { useState } from "react";
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <DefaultPage />,
+    children: [
+      {
+        path: "token/:token",
+        element: <TokenPage />
+      }
+    ],
+  }
+])
 
 function App() {
-  const [isAuthed, setIsAuthed] = useState(false);
-
-  return (
-    <>
-      <Header children={<UserBlock />} />
-      <div className={styles.content}>
-        <Content />
-      </div>
-      {!isAuthed && <AuthForm />}
-    </>
-  );
+  return <RouterProvider router={router}/>
 }
 
 export default App;
